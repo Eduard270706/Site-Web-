@@ -1,0 +1,126 @@
+
+body {
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+    background: linear-gradient(to bottom, #001f3f, #003366);
+    color: white;
+    
+}
+#minge{
+    position:fixed;
+    left:30px;
+    top:25px;
+    font-size:30px;
+    transition:transform 0.4s ease;
+    text-decoration:none;
+}
+#minge:hover{
+    transform:scale(2.0) rotate(360deg);
+}
+section{
+    border:3px solid gold;
+}
+.hero {
+    text-align:center;
+    padding: 90px 20px;
+    background: url("stadion.jpg") top/cover;
+    color: gold;
+    text-shadow: 0 0 12px black;
+    animation: fadeInDown 1.5s ease forwards;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+    transition: transform 0.5s;
+}
+
+.hero h1:hover {
+    transform: scale(1.05);
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.poze {
+    padding: 90px 60px;
+    margin: 80px auto;
+    width: 85%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.35);
+    animation: slideUp 1.2s ease forwards;
+    transition: transform 0.5s;
+}
+
+.poze:hover {
+    transform: translateY(-5px);
+}
+
+.poze h2 {
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color:red;
+}
+
+.poze p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 320px;
+    height: 220px;
+    border-radius: 18px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 28px rgba(255,215,0,0.85);
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    color: yellow;
+    font-size: 1rem;
+}
+
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(60px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+    .poze { padding: 60px 35px; width: 90%; }
+    .gallery img { width: 280px; height: 180px; }
+    .hero h1 { font-size: 2.4rem; }
+}
+
+@media (max-width: 600px) {
+    .poze { padding: 40px 25px; }
+    .gallery img { width: 95%; height: 180px; }
+    .hero h1 { font-size: 2rem; }
+    body { padding-bottom: 50px; }
+}

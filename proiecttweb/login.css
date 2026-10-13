@@ -1,0 +1,72 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("euro1.jpg"); 
+    background-size: cover;
+    background-position: center;
+   
+}
+
+h1 {
+    color: aqua;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#login {
+    background: rgba(0, 0, 0, 0.75); 
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+}
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 280px;
+    margin-top: 20px;
+    padding: 10px;
+
+    background: #fcd116;
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e0b800;
+}
+
+#afisare {
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+}

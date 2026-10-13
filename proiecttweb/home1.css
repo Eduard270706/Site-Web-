@@ -1,0 +1,147 @@
+h1{
+    text-transform:uppercase;
+    font-family:'Times New Roman', Times, serif;
+}
+body {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      color: whitesmoke;
+      background: linear-gradient(270deg, blue, yellow, red);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      overflow: hidden;
+      animation: gradientMove 10s ease infinite;
+      background-size: 600% 600%;
+ }
+@keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+#intro{
+    border-radius:20px;
+    background:rgba(0,0,0,0.6);
+    text-align:center;
+    padding:60px 50px;
+    position:relative;
+    left:90px;
+    top:0px;
+    box-shadow: 0 0 40px black;
+    width: 60%;
+    display:inline-block;
+    transition:all 1s ease ;
+}
+#intro h1::after{
+    content:"😊";
+}
+#intro:hover{
+    transform:scale(1.1);
+}
+#elev{
+    position:fixed;
+    right:20px;
+    top:0;
+    color:black;
+    font-size:30px;
+    font-family:"Permanent Marker", cursive;
+    
+}
+#logout{
+    position:fixed;
+    right:30px;
+    bottom:45px;
+    width:250px;
+    background-color:#b30000;
+    height:50px;
+    font-size:20px;
+    font-weight: bold;
+}
+#logout:hover{
+      background-color:lime;
+}
+p#detalii{
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeInText 3s ease forwards 0.5s;
+    }
+
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+    }
+aside{
+    position:absolute;
+    left:0;
+    background-color:black;
+    height:120%;
+    width:220px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    animation:slideLeft 1s ease-in;
+    
+}
+aside a{
+    text-decoration:none;
+    color:white;
+    font-family:  "Permanent Marker", cursive;
+    display:inline-block;
+    transition:all 0.3s ease;
+}
+aside a.nume{
+    font-size:23px;
+    
+}
+aside ul{
+    list-style-type: none;
+}
+aside a:hover{
+    color:yellow;
+    text-decoration:none;
+    transform:scale(1.3);
+}
+.frf{
+    position:relative;
+    top:41px;
+    font-size:23px;
+}
+aside ul.submeniu{
+    visibility:hidden;
+}
+aside ul.meniu>li:hover>ul.submeniu{
+    visibility:visible;
+
+}
+aside ul.submeniu a{
+    font-size:17px;
+}
+aside>#steag{
+    position:absolute;
+    top:0px; 
+    left:0;
+    height:180px;
+    
+}
+footer{
+    position:fixed;
+    bottom:40px;
+    left:650px;
+    color:aliceblue;
+    text-align:center;
+    font-size:15px;
+    
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

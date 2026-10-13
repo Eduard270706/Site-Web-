@@ -1,0 +1,14 @@
+[
+    {"nume":"Radu Dragusin","meciuri": 27,"goluri":1, "asisturi":0},
+    {"nume":"Nicolae Stanciu", "meciuri":82,"goluri":15, "asisturi":30},
+    {"nume":"Razvan Marin","meciuri":70, "goluri":10, "asisturi":25},
+    {"nume":"Andrei Ratiu", "meciuri":25,"goluri":2, "asisturi":12},
+    {"nume":"Nicusor Bancu","meciuri":80, "goluri":1, "asisturi":4},
+    {"nume":"Ionut Radu", "meciuri":10,"goluri":0, "asisturi":1},
+    {"nume":"Ianis Hagi", "meciuri":57,"goluri":20, "asisturi":16},
+    {"nume":"Dennis Man", "meciuri":50,"goluri":14, "asisturi":15},
+    {"nume":"Marius Marin", "meciuri":30,"goluri":7, "asisturi":9},
+    {"nume":"Andrei Burca", "meciuri":70,"goluri":2, "asisturi":0},
+    {"nume":"Daniel Birligea", "meciuri":12,"goluri":7, "asisturi":2}
+
+]
